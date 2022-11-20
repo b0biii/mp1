@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Press+Start+2P&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+header
+{
+    background-color: #12232E;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 90vh;
+    font-family: 'Kanit', sans-serif;
+    background-color: #203647;
+    color: #EEFBFB;
+}
+
+.logo h3
+{
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Press Start 2P", sans-serif;
+    padding-top: 8px;
+    text-shadow: -3px 0 #222831, 0 3px #222831, 3px 0 #222831, 0 -3px #222831;
+}
+
+.dropdown
+{
+    text-transform: uppercase;
+    margin-left: 155px;
+}
+
+.dropdown ul, nav li
+{
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown ul
+{
+    list-style: none;
+}
+
+.dropdown li
+{
+    float: left;
+    position: relative;
+}
+
+.dropdown a
+{
+    color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 30px 40px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown li:hover a
+{
+    background-color: #0e1b24;
+    color: #4DA8DA;
+    width: auto;
+}
+
+.dropdown li:hover ul#submenu
+{
+    opacity: 1;
+    margin-top: 43px;
+    display: block;
+}
+
+#submenu
+{
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    display: none;
+    z-index: 1;
+}
+
+#submenu a
+{
+    background-color: #0e1b24;
+    color: white;
+    width: auto;
+}
+
+#submenu a:hover
+{
+    color: #4DA8DA;
+}
+
+.introsec
+{
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.introsec h3
+{
+    font-size: 45px;
+    color: #EEFBFB;
+    font-family: "Press Start 2P", sans-serif;
+    padding-top: 20px;
+}
+
+.introsec .col-sm-12 img
+{
+    width: 45vh;
+    margin-top: -30px;
+}
+
+.introsec .welcomer
+{
+    margin-bottom: 60px;
+}
+
+.welcomer
+{
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.welcomer:before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -3%;
+    width: 6%;
+    height: 1px;
+    background-color: #007CC7;
+    z-index: 1;
+    transition: 0.3s ease;
+}
+
+.welcomer:hover:before
+{
+    width: 24%;
+    margin-left: -12%;
+}
+
+.welcomer:after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -12%;
+    width: 24%;
+    height: 1px;
+    background-color: #EEFBFB;
+}
+
+.welcomer p
+{
+    color: #EEFBFB;
+    display: inline-block;
+    padding: 0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+
+.description p
+{
+    font-size: 20px;
+}
+
+.uses
+{
+    position: relative;
+    background-color: #007CC7;
+    margin: 50px 0px 0px;
+    padding: 50px 25px 40px;
+    text-align: center;
+    box-shadow: 0px 0px 5px #0069aa;
+}
+
+.uses:hover, .uses.active
+{
+    box-shadow: 0px 0px 0px 10px #007CC7;
+    background-color: #dcf8f8;
+    transition: 0.6s ease;
+}
+
+.uses .uicons
+{
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.uses .fa-solid
+{
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    color: white;
+    line-height: 2;
+    background: #007CC7;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px #0069aa; 
+}
+
+.uses:hover .fa-solid
+{
+    background: #dcf8f8;
+    color: #007CC7;
+    box-shadow: 0px 0px 0px 10px #007CC7;
+    transition: 0.6s ease;
+}
+
+.uses h3
+{
+    font-size: 18px;
+    color: #EEFBFB;
+    font-weight: 700;
+    font-family: "Kanit", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.uses p
+{
+    color: #EEFBFB;
+}
+
+.uses:hover h3, .uses:hover p
+{
+    color: #12232E;
+}
+
+.carsec
+{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: fixed;
+}
+
+.carsec h3
+{
+    background-color: #007CC7;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 20px;
+    font-size: 22px;
+    font-family: "Press Start 2P", sans-serif;
+    color: white;
+    
+}
+
+.carsec .welcomer
+{
+    padding-top: 20px;
+}
+
+#keyb
+{
+    background-image: url("imgs/keybsec.png");
+    color:#203647;
+}
+
+#mice
+{
+    background-image: url("imgs/micesec.png");
+    color:#203647;
+}
+
+.carsec .item h2
+{
+    font-weight: 700;
+}
+
+.carsec .item img
+{
+    width: 50vh;
+}
+
+#carspace
+{
+    border: 15px solid #12232E;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 0 10% 0 10%;
+    background-color: #4DA8DA;
+    background-repeat: 0;
+}
+
+.carsec .welcomer p
+{
+    color: white;
+}
+
+.carsec .welcomer
+{
+    margin-bottom: 20px;
+}
+
+.carsec .carousel-indicators
+{
+    font-size: 50px;
+    bottom: -80px;
+}
+
+.carsec .carousel-indicators li
+{
+    background-color: #4DA8DA;
+    border: 2px solid #203647;
+    transition: 0.2s ease;
+}
+
+.carsec .carousel-indicators li.active
+{
+    border: 1px solid #12232E;
+    background-color: #007CC7;
+}
+
+.carsec .default-btn
+{
+    display: none;
+    color: #222831;
+    padding: 8px 15px;
+    font-size: 22px;
+    transition: 0.2s ease-in;
+    display: none;
+}
+
+.carsec .item
+{
+    transition: 0.2s ease-in;
+}
+
+.carsec .active .default-btn
+{
+    display: block;
+}
+
+.carsec .default-btn:hover
+{
+    color: #007CC7;
+    text-shadow: -2px 0 #222831, 0 2px #222831, 2px 0 #222831, 0 -2px #222831;
+}
+
+.aboutsec
+{
+    background-color: #222831;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.aboutsec .about-block p
+{
+    text-indent: 2.5em;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.aboutsec .about-block
+{
+    margin-right: 20px;
+}
+
+.aboutsec h3
+{
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.aboutsec h4
+{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 4px;
+    letter-spacing: 0.025em;
+}
+
+.aboutsec span
+{
+    display: block;
+    color: white;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.025em;
+}
+
+.aboutsec ul li
+{
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.aboutsec ul li:last-child
+{   
+    margin-bottom: 0;
+}
+
+.aboutsec ul li .fa-brands
+{
+    float: left;
+    width: 25px;
+    color: #4DA8DA;
+    font-size: 30px;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+.aboutsec ul li .fa-solid
+{
+    float: left;
+    width: 25px;
+    color: #4DA8DA;
+    font-size: 30px;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+.aboutsec ul li .info
+{
+    float: left;
+    width: 180px;
+    padding-left: 25px;
+}
+
+.contentsec
+{
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+.contentsec h1
+{
+    padding-bottom: 10px;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: #12232E;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+#contspace
+{
+    border: 15px solid #12232E;
+    border-radius: 30px;
+    background-color: #4DA8DA;
+    background-repeat: 0;
+}
+
+.contentsec .imgcarcont
+{
+    background-color: yellowgreen;
+}
+
+.contentsec .carousel-indicators
+{
+    bottom: -60px;
+}
+
+.contentsec .carousel-indicators li
+{
+    background-color: #4DA8DA;
+    border: 2px solid #203647;
+    transition: 0.2s ease;
+}
+
+.contentsec .carousel-indicators li.active
+{
+    border: 1px solid #12232E;
+    background-color: #007CC7;
+}
+
+.contentsec #ctrlcont
+{
+    background: none;
+}
+
+.contentsec #contspace img
+{
+    width: 100vh;
+}
+
+.spec
+{
+    position: relative;
+    width: 285px;
+    float: left;
+    padding: 15px 15px;
+    text-align: center;
+    transition: 0.3s ease;
+    border-radius: 40px;
+}
+
+.specspace
+{
+    padding-top: 20px;
+}
+
+.spec-icon
+{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.spec i.fa-solid
+{
+    border: 3px solid #12232E;
+    border-radius: 100%;
+    padding: 8px;
+    font-size: 20px;
+    background-color: #4DA8DA;
+    color: #12232E;
+    width: 42px;
+    height: 42px;
+    transition: 0.3s ease-in;
+}
+
+.spec:hover
+{
+    background-color: #12232E;
+    border-radius: 40px;
+}
+
+.spec:hover .spec-icon .fa-solid
+{
+    border: 3px solid #007CC7;
+    background-color: #EEFBFB;
+    color: #007CC7;
+}
+
+#description-cont
+{
+    padding-top: 40px;
+}
+
+.pdesc
+{
+    padding-top: 10px;
+}
+
+.pdesc h3
+{
+    font-size: 40px;
+    border-radius: 30px;
+    background-color: #12232E;
+    padding: 5px 0px 5px 30px
+}
+
+.pdesc h4
+{
+    padding-top: 20px;
+    font-size: 30px;
+    border-radius: 30px;
+    background-color: #12232E;
+    padding: 5px 0px 5px 30px;
+}
+
+.pdesc p
+{
+    text-indent: 2em;
+    text-align: justify;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.credits
+{
+    margin-top: 40px;
+    font-weight: lighter;
+    opacity: 30%;
+}
+
+.pfp-cont
+{
+    text-align: center;
+    float: left;
+    padding: 35px 30px 40px 0px;
+}
+
+.pfp-cont img
+{
+    border-radius: 100%;
+    border: 3px solid #0e1b24;
+    width: 100px;
+}
+
+.divider
+{
+    border-left: 1px solid gray;
+    border-right: 0;
+}
+
+@media screen and (max-width: 1080px)
+{
+    .dropdown
+    {
+        text-transform: uppercase;
+        margin-left: 35px;
+        float: left;
+    }
+    
+}
