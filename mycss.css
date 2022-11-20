@@ -280,13 +280,13 @@ body
 
 #keyb
 {
-    background-image: url("imgs/keybsec.png");
+    background-image: url("pages/imgs/keybsec.png");
     color:#203647;
 }
 
 #mice
 {
-    background-image: url("imgs/micesec.png");
+    background-image: url("pages/imgs/micesec.png");
     color:#203647;
 }
 
