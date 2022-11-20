@@ -280,16 +280,14 @@ body
 
 #keyb
 {
-    background-image: url("pages/imgs/keybsec.png");
+    background-image: url("pages/imgs/keybsec.png"), opacity: 40%;
     color:#203647;
-    opacity: 40%;
 }
 
 #mice
 {
-    background-image: url("pages/imgs/micesec.png");
+    background-image: url("pages/imgs/micesec.png"), opacity: 40%;
     color:#203647;
-    opacity: 40%;
 }
 
 .carsec .item h2
