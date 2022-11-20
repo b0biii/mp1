@@ -282,12 +282,14 @@ body
 {
     background-image: url("pages/imgs/keybsec.png");
     color:#203647;
+    opacity: 40%;
 }
 
 #mice
 {
     background-image: url("pages/imgs/micesec.png");
     color:#203647;
+    opacity: 40%;
 }
 
 .carsec .item h2
